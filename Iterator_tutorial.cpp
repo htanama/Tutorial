@@ -15,13 +15,18 @@ private:
     
 public:
     Food () {};
+    
     std::string getFood(int index) const{
         return vector_of_Foods[index];
     }
+    
     std::string getFood() const{
         return "Getting Food";
     }
-
+    
+    std::vector<std::string> getVectorFood() const{
+        return vector_of_Foods;
+    }
 };
 
 
@@ -74,12 +79,23 @@ int main()
     
     // Accessing the elements using iterators
     std::cout <<"Accessing the elements with using iterators\n";
-  
+    
     for (iter_Food = myVectorFood.begin(); iter_Food != myVectorFood.end(); ++iter_Food)
     {
-        // std::string str = iter_Food->getFood();
-        std::cout <<"Using arrow (->) to access Food object: " << iter_Food->getFood() << " ";
+        std::cout <<"Using arrow (->) to access Food object calling member function getVectorFood:\n"; 
+        
+        for(int i = 0; i < iter_Food->getVectorFood().size(); ++i)
+            std::cout << iter_Food->getVectorFood()[i] << ", ";
     }
-    std::cout << "\n";
+    
+    
+    std::cout << "\n\n";
+    
+    for(std::vector<Food>::iterator iter_vector = myVectorFood.begin(); iter_vector != myVectorFood.end(); ++iter_vector)
+    {
+        std::vector<std::string> string_food = iter_vector->getVectorFood();
+        std::cout <<"Using arrow (->) to access Food object and calling member function getVectorFood() and\naccess vector_of_Foods element using std::at(1): " << iter_vector->getVectorFood().at(1) << " ";
+    }
+    
     return 0;
 }
