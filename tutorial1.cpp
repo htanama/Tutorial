@@ -59,8 +59,20 @@ public:
 
 int main()
 {
-    // first is instant of Person object
-    Person first; 
+    // he and she are an object of a Person class
+    // both have default name to "John Doe"
+    Person he, she; 
+    
+    // to access object member function use (dot)
+    std::cout <<"she: "<< she.getName() << std::endl;
+    std::cout <<"he: " << he.getName() << std::endl;
+    
+    std::cout  << std::endl;
+    //change the name of object she to "Lara Croft"
+    she.setName("Lara Croft");
+    
+    std::cout <<"she: "<< she.getName() << std::endl;
+    std::cout <<"he: " << he.getName() << std::endl;
     
     // studentDB is a vector of Person object
     std::vector<Person> studentDB(1);
@@ -72,10 +84,14 @@ int main()
     // studentDB is a vector of object Person
     studentDB[0].setName("Harry");
     
-    std::cout <<first.getName() << std::endl;
+    
+    
     std::cout << x << std::endl;
+    
     std::cout << studentDB[0] .getName() << std::endl;
-   
+    
+    
+    
 
     return 0;
 }
