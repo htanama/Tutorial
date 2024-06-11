@@ -27,9 +27,10 @@ private:
 public:
     Person() : mAge(18), mName("John Doe")
     {
-        
+        // default constructor body
     }
     
+    // overloading constructor
     Person(int age, std::string name) : mAge(age), mName(name)
     {
     }
@@ -94,6 +95,7 @@ int main()
     
      std::cout  << std::endl;
      
+    std::cout << "Using for range-based loop to print the name of student from studentDB vector of Person object" << std::endl; 
     // using for range-based loop to print the name of student from studentDB vector of Person object
     for(Person found : studentDB){
         std::cout << found.getName() << std::endl;
@@ -102,10 +104,13 @@ int main()
     int vecSize = studentDB.size();
     
     // use dot to access the std::vector::size() member function 
-    std::cout <<"size of studentDB vector after inserting Person objects: " << vecSize << std::endl;
+    std::cout <<"size of studentDB vector after inserting Person objects: " << vecSize << "\n\n";
     
-    //std::vector<Person>::iterator found = studentDB.begin();
-    
+    std::cout << "Using iterator inside for loop to print the name of student from studentDB vector of Person object\n"; 
+    // using iterator inside for loop to print the name of student from studentDB vector of Person object
+    std::vector<Person>::iterator itr = studentDB.begin();
+    for(; itr != studentDB.end(); ++itr)
+        std::cout << itr->getName() << std::endl;    
     
     return 0;
 }
