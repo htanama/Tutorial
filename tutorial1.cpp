@@ -59,19 +59,23 @@ public:
 
 int main()
 {
-    Person first;
+    // first is instant of Person object
+    Person first; 
+    
+    // studentDB is a vector of Person object
     std::vector<Person> studentDB(1);
     
+    // use dot to access the std::vector::size() member function 
     int x = studentDB.size();
     
+    // use the index of vector [i] and use dot to access the member function inside the Person object
+    // studentDB is a vector of object Person
     studentDB[0].setName("Harry");
     
     std::cout <<first.getName() << std::endl;
     std::cout << x << std::endl;
     std::cout << studentDB[0] .getName() << std::endl;
-    
-    studentDB.push_back()
-    
+   
 
     return 0;
 }
