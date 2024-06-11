@@ -78,20 +78,34 @@ int main()
     std::vector<Person> studentDB(1);
     
     // use dot to access the std::vector::size() member function 
-    int x = studentDB.size();
+    std::cout <<"size of studentDB vector " << studentDB.size() << std::endl;
     
     // use the index of vector [i] and use dot to access the member function inside the Person object
     // studentDB is a vector of object Person
     studentDB[0].setName("Harry");
     
-    
-    
-    std::cout << x << std::endl;
-    
     std::cout << studentDB[0] .getName() << std::endl;
     
+    // inserting object into vector 
+    // make sure the data type inside the vector match with the data type 
+    // we are inserting Person data type into studentDB vector
+    studentDB.push_back(he);
+    studentDB.push_back(she);
+    
+     std::cout  << std::endl;
+     
+    // using for range-based loop to print the name of student from studentDB vector of Person object
+    for(Person found : studentDB){
+        std::cout << found.getName() << std::endl;
+    }
+    
+    int vecSize = studentDB.size();
+    
+    // use dot to access the std::vector::size() member function 
+    std::cout <<"size of studentDB vector after inserting Person objects: " << vecSize << std::endl;
+    
+    //std::vector<Person>::iterator found = studentDB.begin();
     
     
-
     return 0;
 }
