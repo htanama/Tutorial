@@ -26,6 +26,12 @@ int main()
     data_map['c'].push_back(int_vec[0]);
     data_map['d'].push_back(int_vec[6]);
     
+    // Create a pair to insert
+    std::pair<char, std::vector<int>> pair_to_insert = std::make_pair('a', int_vec);
+    // Insert the pair into the map   
+    std::pair<std::map<char, std::vector<int>>::iterator, bool> result = data_map.insert(pair_to_insert);
+
+    
     for(std::pair<const char, std::vector<int>> &iter : data_map)
     {
         std::cout << iter.first << ": ";
