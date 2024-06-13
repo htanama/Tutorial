@@ -17,5 +17,21 @@ int main()
         std::cout << iter.first << ": " << iter.second << " degree fahrenheit\n";
     }
     
+    std::vector<int> int_vec = {1, 2, 3, 4, 5, 6, 7};
+    
+    std::map<char, std::vector<int>> data_map;
+    std::pair<char, std::vector<int>> dataToInsert =
+        std::make_pair('a', int_vec);
+    data_map['b'].push_back(int_vec[4]);
+    data_map['c'].push_back(int_vec[0]);
+    data_map['d'].push_back(int_vec[6]);
+    
+    for(std::pair<const char, std::vector<int>> &iter : data_map)
+    {
+        std::cout << iter.first << ": ";
+        for(int num : iter.second){
+            std::cout << num << " \n";
+        }
+    }
     return 0;
 }
