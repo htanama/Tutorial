@@ -39,11 +39,8 @@ int main() {
         std::cout << " \n";
     }
     std::cout << "\n\n";
-    // Create a new student
+    
     Student newStudent("Harry", 40, 23425);
-
-    // Insert the new student at the second position
-    // Note: Indexing starts from 0, so the second position is index 1
     std::vector<Student>::iterator itr = myVector.begin();
     myVector.insert(itr+2, newStudent);
     
