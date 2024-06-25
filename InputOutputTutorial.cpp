@@ -20,7 +20,22 @@ int main() {
         std::cout << perLine << "\n";
     }
     inFile.close();
-    //std::stringstream strStream;
     
+    std::string myLine = "Apple;Strawberry;Banana;Pineapple";
+    std::stringstream strStream(myLine);
+    std::string outPutLine;
+    
+    std::getline(strStream, outPutLine, delimiter);
+    std::cout << outPutLine << "\n";
+    
+    std::getline(strStream, outPutLine, delimiter);
+    std::cout << outPutLine << "\n";
+    
+    std::getline(strStream, outPutLine, delimiter);
+    std::cout << outPutLine << "\n";
+    
+    std::getline(strStream, outPutLine, delimiter);
+    std::cout << outPutLine << "\n";
+      
     return 0;
 }
