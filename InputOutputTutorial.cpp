@@ -19,8 +19,8 @@ int main() {
         std::getline(inFile, perLine);
         std::cout << perLine << "\n";
     }
-    
-    std::stringstream strStream;
+    inFile.close();
+    //std::stringstream strStream;
     
     return 0;
 }
