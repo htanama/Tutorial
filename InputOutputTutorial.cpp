@@ -10,13 +10,14 @@ int main() {
     
     std::ofstream outFile(fileName);
     char delimiter = ';';
-    outFile << "Apple" << delimiter << "Strawberry" << delimiter << "Banana";
+    outFile << "Apple" << delimiter << "Strawberry" << delimiter << "Banana" << delimiter << "Pineapple";
     outFile.close();
     
     std::ifstream inFile(fileName);
     if(inFile.is_open()){
         std::string perLine;
         std::getline(inFile, perLine);
+        std::cout << perLine << "\n";
     }
     
     std::stringstream strStream;
