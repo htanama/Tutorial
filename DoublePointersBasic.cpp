@@ -5,14 +5,19 @@ int main() {
 
     int num = 3;
     int *ptrInt = &num;
-    // double pointer variable can only point to a pointer variable
-    int **dbPtrInt = &ptrInt; 
     
-    cout <<"address of num:       " << &num << endl;
-    cout <<"address of *ptrInt:   " << ptrInt << endl;
-    cout <<"address of *dbPtrInt: " << *dbPtrInt << endl << endl;
-    cout <<"address &ptrInt      " << &ptrInt << endl;
-    cout <<"Who address is this? " << dbPtrInt << endl;
+    // double pointer variable can only point to a pointer variable
+    int **dbPtrInt = &ptrInt;
+    
+    cout << std::setw(25) << std::left << "address of num: " << &num << endl;
+    cout << std::setw(25) << std::left <<"address of *ptrInt: " << ptrInt << endl;
+    cout << std::setw(25) << std::left <<"address of *dbPtrInt: " << *dbPtrInt << endl << endl;
+    cout << std::setw(25) << std::left <<"address &ptrInt: "<< &ptrInt << endl;
+    cout << std::setw(25) << std::left <<"Who address is this? "<< dbPtrInt << endl << endl;
+    
+    cout << std::setw(25) << std::left << "The value of num: "<< num << endl;
+    cout << std::setw(25) << std::left <<"The value of ptrInt: " << *ptrInt << endl;
+    cout << std::setw(25) << std::left << "The value of dbPtrInt: " << **dbPtrInt << endl;
     
     ptrInt=NULL;
     dbPtrInt=NULL; 
