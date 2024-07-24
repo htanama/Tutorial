@@ -33,6 +33,8 @@ private:
     unsigned int mSize;
     
 public: 
+    MyString() : mSize(0), mBuffer(nullptr) {}
+    
     MyString(const char *str){
         mSize = strlen(str);
         mBuffer = new char[mSize + 1]; // add 1 for null terminator '\0'
@@ -76,13 +78,10 @@ public:
     // Move Assignment Operator
     MyString &operator=(MyString&& original) noexcept{
         if(this == &original) return *this;
-        /* or you can do this
-        if(this != &other){
-            delete[] mBuffer;
-        }
-        */
+
         SetString(original.mBuffer);
         original.mBuffer = nullptr;
+
         return *this;
     }
     
@@ -114,10 +113,10 @@ public:
 
 int main() {
 
-    MyString myFirstStr("hello world");
+    MyString myFirstStr("Hello world");
     myFirstStr.Print();
     std::cout << std::endl;
-    myFirstStr.SetString("Hello New Stuff");
+    myFirstStr.SetString("Welcome");
     std::cout << myFirstStr.GetBuffer();
     
     return 0;
