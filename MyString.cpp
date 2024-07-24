@@ -36,9 +36,16 @@ public:
     MyString(const char *str){
         mSize = strlen(str);
         mBuffer = new char();
+        // There are 3 ways to copy array of char:
+        // First Way:
         //strcpy(mBuffer, str);
+        
+        /*/Seoncd Way:
         for(int i = 0; i < mSize; ++i)
-            mBuffer[i] = str[i];
+            mBuffer[i] = str[i]; */
+            
+        // Third Way: never do memcopy
+        memmove(mBuffer, str, mSize);
     }
     
     //Destructor
