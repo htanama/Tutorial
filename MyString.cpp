@@ -35,7 +35,7 @@ private:
 public: 
     MyString(const char *str){
         mSize = strlen(str);
-        mBuffer = new char();
+        mBuffer = new char[mSize + 1]; // add 1 for null terminator '\0'
         // There are 3 ways to copy array of char:
         // First Way:
         //strcpy(mBuffer, str);
@@ -52,10 +52,17 @@ public:
     ~MyString(){
         delete[] mBuffer;
     }
+    
+    MyString(const MyString &original){
+        *this = original;
+    }
+    
     // Overloading Assignment Operator
     MyString& operator=(const MyString &original){
-        *mBuffer = *original.GetBuffer();
+        if(this == &original) return *this;
         
+        SetString(original.mBuffer);
+    
         return *this;
     }
     
@@ -68,14 +75,20 @@ public:
         if(mBuffer != nullptr){
             delete[] mBuffer;
         }
-        mSize = strlen(str);
-        mBuffer = new char();
+        mSize = strlen(str + 1); // add 1 for null terminator '\0'
+        mBuffer = new char[mSize]; 
         strcpy(mBuffer, str);
     }
     
     char* GetBuffer() const{
         return mBuffer;
     }
+    
+    /*/ Implementation of the operator<<
+    std::ostream& operator<<(std::ostream& stream, const MyString& string) {
+        stream << string.mBuffer;
+        return stream;
+    }*/
 };
 
 int main() {
@@ -85,5 +98,6 @@ int main() {
     std::cout << std::endl;
     myFirstStr.SetString("Hello New Stuff");
     std::cout << myFirstStr.GetBuffer();
+    
     return 0;
 }
