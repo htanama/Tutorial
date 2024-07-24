@@ -52,17 +52,37 @@ public:
     ~MyString(){
         delete[] mBuffer;
     }
-    
+    // Copy Constructor
     MyString(const MyString &original){
         *this = original;
     }
     
     // Overloading Assignment Operator
     MyString& operator=(const MyString &original){
-        if(this == &original) return *this;
+        // if(this == &original) return *this;
+        if(this != &original){
+            SetString(original.mBuffer);
+        }
         
-        SetString(original.mBuffer);
+        return *this;
+    }
     
+    // Move Constructor
+    MyString(MyString&& original){
+        mBuffer = original.mBuffer;
+        original.mBuffer = nullptr;
+    }
+    
+    // Move Assignment Operator
+    MyString &operator=(MyString&& original) noexcept{
+        if(this == &original) return *this;
+        /* or you can do this
+        if(this != &other){
+            delete[] mBuffer;
+        }
+        */
+        SetString(original.mBuffer);
+        original.mBuffer = nullptr;
         return *this;
     }
     
@@ -71,6 +91,7 @@ public:
         //std::cout << mBuffer; // C++ style print
     }
     
+    // Mutator function
     void SetString(const char *str){
         if(mBuffer != nullptr){
             delete[] mBuffer;
