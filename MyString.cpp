@@ -36,23 +36,37 @@ public:
     MyString(const char *str){
         mSize = strlen(str);
         mBuffer = new char();
-        strcpy(mBuffer, str);
+        //strcpy(mBuffer, str);
+        for(int i = 0; i < mSize; ++i)
+            mBuffer[i] = str[i];
     }
     
+    //Destructor
     ~MyString(){
         delete[] mBuffer;
+    }
+    // Overloading Assignment Operator
+    MyString& operator=(const MyString &original){
+        *mBuffer = *original.GetBuffer();
+        
+        return *this;
     }
     
     void Print() const{
         printf("%s", mBuffer); // C style print
         //std::cout << mBuffer; // C++ style print
     }
+    
+    char* GetBuffer() const{
+        return mBuffer;
+    }
 };
 
 int main() {
 
     MyString myFirstStr("hello world");
-    myFirstStr.Print();
-    
+    //myFirstStr.Print();
+    std::cout << std::endl;
+    std::cout << myFirstStr.GetBuffer();
     return 0;
 }
