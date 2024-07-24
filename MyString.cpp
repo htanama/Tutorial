@@ -57,6 +57,15 @@ public:
         //std::cout << mBuffer; // C++ style print
     }
     
+    void SetString(const char *str){
+        if(mBuffer != nullptr){
+            delete[] mBuffer;
+        }
+        mSize = strlen(str);
+        mBuffer = new char();
+        strcpy(mBuffer, str);
+    }
+    
     char* GetBuffer() const{
         return mBuffer;
     }
@@ -65,8 +74,9 @@ public:
 int main() {
 
     MyString myFirstStr("hello world");
-    //myFirstStr.Print();
+    myFirstStr.Print();
     std::cout << std::endl;
+    myFirstStr.SetString("Hello New Stuff");
     std::cout << myFirstStr.GetBuffer();
     return 0;
 }
