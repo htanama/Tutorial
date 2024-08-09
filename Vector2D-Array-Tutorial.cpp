@@ -28,7 +28,7 @@
 
 int main() {
    
-   const int SIZE = 6;
+   const int SIZE = 4;
    std::vector<std::vector<bool>> board2D;
    
    board2D.resize(SIZE, std::vector<bool>(SIZE) );
@@ -41,11 +41,12 @@ int main() {
    for(int row = 0; row < board2D.size(); ++row){ // board2D.size() - outer vector
        // board2D[row].size() - the size of each column in a vector (inner vector)
        for(int col = 0; col < board2D[row].size(); ++col){
-           board2D[row][col] = false;
+           board2D[row][col] = true;
        }
    }
    
    // Display the vector on the screen
+    std::cout<< "The first method to print the elements of vector on the screen using nested for loop\n" << std::endl;
    for(int y = 0; y < board2D.size(); ++y){ // row - outer vector
        // board2D[0].size() - we assumed that all the column sizes are the same with index column zero [0]. col - inner vector
        for(int x = 0; x < board2D[0].size(); ++x){
@@ -53,7 +54,15 @@ int main() {
        }
        std::cout << std::endl;
    }
-
+   
+    std::cout << std::endl;
+    std::cout<< "The second method to print the elements of vector on the screen using range-based for loop\n" << std::endl;
+    for(auto& outerArrayRow : board2D){ // outer vector - row
+        for (bool innerArrayCol : outerArrayRow){
+            std::cout << innerArrayCol << " ";
+        }
+        std::cout << std::endl;
+    }
     
     return 0;
 }
