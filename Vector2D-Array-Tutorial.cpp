@@ -30,10 +30,21 @@ int main() {
    
    const int SIZE = 4;
    std::vector<std::vector<bool>> board2D;
-   
+
+   // Resize 2D vector
+   //              ROW , COL
    board2D.resize(SIZE, std::vector<bool>(SIZE) );
-   
-   // resize outer vector - which is row 
+    /* or 
+    matrix.resize(ROW, vector<char>(COL));
+    or
+    matrix = vector<vector<char> >(ROW, vector<char>(COL));
+    
+    or 
+    myVector.resize(n); // this is the outer vector - row
+    for (int i = 0; i < n; ++i) // this is the inner vector - col
+        myVector[i].resize(m);
+    */
+   // resize outer vector - which is  row 
    // resize inner vector - which is column
 
     /*
@@ -52,6 +63,8 @@ int main() {
            board2D[row][col] = true;
        }
    }
+    // board2D.size() gives you the number of rows in the 2D vector.
+    // board2D[row].size() gives you the number of columns in the specific row at index row.
    
    // Display the vector on the screen
     std::cout<< "The first method to print the elements of vector on the screen using nested for loop\n" << std::endl;
