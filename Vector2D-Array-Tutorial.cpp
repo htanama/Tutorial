@@ -34,12 +34,20 @@ int main() {
    board2D.resize(SIZE, std::vector<bool>(SIZE) );
    
    // resize outer vector - which is row 
-   
    // resize inner vector - which is column
-   
+
+    /*
+    Each element of board2D is itself a vector.
+    board2D.size(): This gives the number of rows in the 2D vector. It returns the size of the outer vectors (i.e., the number of rows).
+    board2D[row]: This accesses the row at index row in the 2D vector. board2D[row] itself is a vector representing that specific row.
+    board2D[row].size(): This gives the number of columns in the row at index row. Each row is a vector, 
+    it returns the size of elements (i.e., the number of columns in that row).
+    */
+    
    // Initialize vector element
    for(int row = 0; row < board2D.size(); ++row){ // board2D.size() - outer vector
-       // board2D[row].size() - the size of the row or the individual column in the inner vector
+       // board2D[row].size() - This is the size of the row. It returns the number of elements in the row-th row of the 2D vector. 
+       // Essentially, it gives you the size of that specific row, which is the number of columns in that row.
        for(int col = 0; col < board2D[row].size(); ++col){
            board2D[row][col] = true;
        }
