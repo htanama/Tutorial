@@ -39,7 +39,7 @@ int main() {
    
    // Initialize vector element
    for(int row = 0; row < board2D.size(); ++row){ // board2D.size() - outer vector
-       // board2D[row].size() - the size of each column in a vector (inner vector)
+       // board2D[row].size() - the size of the row or the individual column in the inner vector
        for(int col = 0; col < board2D[row].size(); ++col){
            board2D[row][col] = true;
        }
@@ -48,7 +48,7 @@ int main() {
    // Display the vector on the screen
     std::cout<< "The first method to print the elements of vector on the screen using nested for loop\n" << std::endl;
    for(int y = 0; y < board2D.size(); ++y){ // row - outer vector
-       // board2D[0].size() - we assumed that all the column sizes are the same with index column zero [0]. col - inner vector
+       // board2D[0].size() - we assumed that all the row sizes are the same with the  index of row zero [0]. This is the inner vector - col
        for(int x = 0; x < board2D[0].size(); ++x){ // col - inner vector
            std::cout << board2D[y][x] << " ";
        }
