@@ -32,12 +32,11 @@ int main() {
    std::vector<std::vector<bool>> board2D;
 
    // Resize 2D vector
-   //              ROW , COL
-   board2D.resize(SIZE, std::vector<bool>(SIZE) );
+   board2D.resize(SIZE, std::vector<bool>(SIZE));
     /* or 
-    matrix.resize(ROW, vector<char>(COL));
+    board2D.resize(ROW, std::vector<char>(COL));
     or
-    matrix = vector<vector<char> >(ROW, vector<char>(COL));
+    board2D = std::vector<std::vector<char>> (ROW, std::vector<char>(COL));
     
     or 
     myVector.resize(n); // this is the outer vector - row
