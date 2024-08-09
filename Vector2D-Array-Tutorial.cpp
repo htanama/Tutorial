@@ -49,7 +49,7 @@ int main() {
     std::cout<< "The first method to print the elements of vector on the screen using nested for loop\n" << std::endl;
    for(int y = 0; y < board2D.size(); ++y){ // row - outer vector
        // board2D[0].size() - we assumed that all the column sizes are the same with index column zero [0]. col - inner vector
-       for(int x = 0; x < board2D[0].size(); ++x){
+       for(int x = 0; x < board2D[0].size(); ++x){ // col - inner vector
            std::cout << board2D[y][x] << " ";
        }
        std::cout << std::endl;
@@ -58,10 +58,20 @@ int main() {
     std::cout << std::endl;
     std::cout<< "The second method to print the elements of vector on the screen using range-based for loop\n" << std::endl;
     for(auto& outerArrayRow : board2D){ // outer vector - row
-        for (bool innerArrayCol : outerArrayRow){
+        for (bool innerArrayCol : outerArrayRow){ // inner vector - col
             std::cout << innerArrayCol << " ";
         }
         std::cout << std::endl;
+    }
+    
+    std::cout << std::endl;
+    std::cout<< "The third method to print the elements of vector on the screen using iterator \n" << std::endl;
+    for(std::vector<std::vector<bool>>::iterator itOuter = board2D.begin(); itOuter != board2D.end(); ++itOuter){ // outer vector
+        for(std::vector<bool>::iterator itInner = itOuter->begin(); itInner != itOuter->end(); ++itInner ){
+            std::cout << *itInner << " ";
+        }
+        std::cout << std::endl;
+        
     }
     
     return 0;
