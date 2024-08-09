@@ -44,6 +44,15 @@ int main() {
            board2D[row][col] = false;
        }
    }
+   
+   // Display the vector on the screen
+   for(int y = 0; y < board2D.size(); ++y){ // row - outer vector
+       // board2D[0].size() - we assumed that all the column sizes are the same with index column zero [0]. col - inner vector
+       for(int x = 0; x < board2D[0].size(); ++x){
+           std::cout << board2D[y][x] << " ";
+       }
+       std::cout << std::endl;
+   }
 
     
     return 0;
