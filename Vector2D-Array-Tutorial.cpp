@@ -67,7 +67,7 @@ int main() {
     std::cout << std::endl;
     std::cout<< "The third method to print the elements of vector on the screen using iterator \n" << std::endl;
     for(std::vector<std::vector<bool>>::iterator itOuter = board2D.begin(); itOuter != board2D.end(); ++itOuter){ // outer vector
-        for(std::vector<bool>::iterator itInner = itOuter->begin(); itInner != itOuter->end(); ++itInner ){
+        for(std::vector<bool>::iterator itInner = itOuter->begin(); itInner != itOuter->end(); ++itInner ){ // inner vector
             std::cout << *itInner << " ";
         }
         std::cout << std::endl;
