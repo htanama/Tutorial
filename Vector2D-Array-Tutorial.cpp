@@ -47,7 +47,7 @@ int main() {
     */
    // resize outer vector - which is  row 
    // resize inner vector - which is column
-
+    
     /*
     Each element of board2D is itself a vector.
     board2D.size(): This gives the number of rows in the 2D vector. It returns the size of the outer vectors (i.e., the number of rows).
@@ -57,6 +57,8 @@ int main() {
     */
     
    // Initialize vector element
+   // board2D.size(); returns the number of rows or size of row
+   // board2D[row].size(); returns the number of columns or size of column in row[0]
    for(int row = 0; row < board2D.size(); ++row){ // board2D.size() - outer vector
        // board2D[row].size() - This is the size of the row. It returns the number of elements in the row-th row of the 2D vector. 
        // Essentially, it gives you the size of that specific row, which is the number of columns in that row.
