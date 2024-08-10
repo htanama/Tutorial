@@ -37,6 +37,8 @@ int main() {
     board2D.resize(ROW, std::vector<char>(COL));
     or
     board2D = std::vector<std::vector<char>> (ROW, std::vector<char>(COL));
+    Create a 2D vector with 3 rows and 4 columns
+    std::vector<std::vector<int>> matrix(3, std::vector<int>(4));
     
     or 
     myVector.resize(n); // this is the outer vector - row
