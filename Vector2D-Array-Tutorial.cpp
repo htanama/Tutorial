@@ -44,6 +44,17 @@ int main() {
     myVector.resize(n); // this is the outer vector - row
     for (int i = 0; i < n; ++i) // this is the inner vector - col
         myVector[i].resize(m);
+    
+    or 
+    // Resizing the row with new size
+    myVector.resize(SIZE);
+    // Iterate through the each column in the row 
+    for (std::vector<int>& row : myVector) {	
+    	//Resize the column and Initialize new elements with false
+    	row.resize(SIZE, false); 
+    }
+    
+    
     */
    // resize outer vector - which is  row 
    // resize inner vector - which is column
