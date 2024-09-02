@@ -1,3 +1,72 @@
+The Best Programmers are more curious about bugs/errors than irritated.
+
+References: 
+
+Lazy Foo' Productions website: https://lazyfoo.net/tutorials/SDL/index.php#Hello%20SDL
+
+Warzone 2100 website: https://wz2100.net/ source code: https://github.com/Warzone2100/warzone2100/tree/master
+
+Secret Maryo Chronicles website: http://www.secretmaryo.org/  source code: https://github.com/FluXy/SMC
+
+The Secret Chronicles of Dr. M. (TSC)  website: https://secretchronicles.org/en/  source code: https://github.com/Secretchronicles/TSC
+
+0.A.D. website: https://play0ad.com/ source code: https://github.com/0ad/0ad
+
+// https://stackoverflow.com/questions/15889578/how-can-i-resize-a-2d-vector-of-objects-given-the-width-and-height
+// resizing 2-dimentional vector in c++
+// myVector.resize(n); // resizing the outer vector which is the rows
+/* then resizing the inner vector which is the column
+for (int i = 0; i < n; ++i)
+	myVector[i].resize(m);
+*/
+ 
+Vector of Vectors (2D Arrays)
+https://www2.cs.arizona.edu/~mercer/compfun3/presentations/13_VectorOfVectors.pdf
+
+Vector and Grid
+https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1198/lectures/Lecture3/Lecture3.pdf
+
+2-Dimentional Arrays
+https://www.cs.cmu.edu/~mrmiller/15-110/Handouts/arrays2D.pdf
+
+How to think like a programmer — lessons in problem solving. https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
+
+Link to learn programming:
+https://github.com/PacktPublishing/Deciphering-Object-Oriented-Programming-with-CPP/tree/main
+
+SIZE OF DATA TYPE FOR 32BIT AND 64BIT COMPUTERS/COMPILERS https://pontus.digipen.edu/~mmead/www/Courses/CS120/DataTypes-1.html
+
+
+Javidx9 - olcPixelGameEngine
+https://github.com/OneLoneCoder/olcPixelGameEngine
+
+Unvanquished is an arena game with RTS elements (you can build) in which two very different factions fight. https://github.com/Unvanquished/Unvanquished
+
+Dæmon is the standalone engine that powers the multiplayer first person shooter Unvanquished.
+https://github.com/DaemonEngine/Daemon
+
+Stanford.edu
+https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1178/lectures/27-Inheritance/code/Polymorphism/lib/StanfordCPPLib/io/
+
+Stack and Heap Memory 
+https://courses.engr.illinois.edu/cs225/fa2022/resources/stack-heap/ 
+
+https://people.computing.clemson.edu/~jmarty/courses/commonCourseContent/Module2-ProgrammingReview/MemoryAndMalloc.pdf
+
+ANSI Escape Sequences https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+
+Iterators in C++ https://www.cs.hunter.cuny.edu/~sweiss/resources/iterators.pdf
+
+Java Technical Interview Questions https://www.simplilearn.com/tutorials/java-tutorial/java-interview-questions
+
+Android 2D Game Tutorial for Beginners
+
+https://o7planning.org/10521/android-2d-game-tutorial-for-beginners
+
+Learning Java by Building Android Games - Third Edition, published by Packt
+
+https://github.com/PacktPublishing/Learning-Java-by-Building-Android-Games-Third-Edition
+
 Move Constructors and Move Assignment Operators (C++)
 
 https://learn.microsoft.com/en-us/cpp/cpp/move-constructors-and-move-assignment-operators-cpp?view=msvc-170
