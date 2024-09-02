@@ -72,3 +72,17 @@ Move Constructors and Move Assignment Operators (C++)
 https://learn.microsoft.com/en-us/cpp/cpp/move-constructors-and-move-assignment-operators-cpp?view=msvc-170
 
 https://web.stanford.edu/class/cs106l/lectures/lecture13_move_semantics_s23.pdf
+
+
+
+SDL2 is a more low-level, flexible, and widely-used library, offering a lot of control and broad platform support, making it a strong choice for those who need that level of control and portability.
+
+SFML is more user-friendly, with a modern C++ API and higher-level abstractions, making it easier and faster to use, especially for smaller projects or developers who prefer object-oriented programming.
+
+Raylib:
+◦ Best for beginners, educational purposes, and rapid prototyping of 2D or simple 3D games.
+◦ Suitable for developers who want a quick and easy way to develop cross-platform games without needing to worry about the low-level details.
+
+OpenGL is a well-established, high-level graphics API that is easier to use and suitable for a wide range of 3D applications. It is ideal for projects where ease of development and cross-platform support are priorities.
+
+Vulkan is a more modern, low-level API that offers higher performance and more control over the GPU, making it suitable for demanding applications where performance is critical and where developers are willing to invest more effort in managing the details of the rendering process.
