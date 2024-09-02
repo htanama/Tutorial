@@ -86,3 +86,7 @@ Raylib:
 OpenGL is a well-established, high-level graphics API that is easier to use and suitable for a wide range of 3D applications. It is ideal for projects where ease of development and cross-platform support are priorities.
 
 Vulkan is a more modern, low-level API that offers higher performance and more control over the GPU, making it suitable for demanding applications where performance is critical and where developers are willing to invest more effort in managing the details of the rendering process.
+
+DirectX 11 is more user-friendly and easier to work with, making it suitable for a broad range of applications, especially those that don't require the absolute best performance. It’s a solid choice for developers who want to maintain compatibility with older hardware and software and who prefer a simpler API.
+
+DirectX 12 offers greater control and potential for performance improvements, especially in multi-threaded and CPU-bound scenarios. However, it comes with increased complexity and a steeper learning curve. DirectX 12 is the better choice for developers who need to optimize for cutting-edge hardware and who are prepared to manage the additional responsibilities that come with a low-level API.
