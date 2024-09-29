@@ -73,6 +73,7 @@ https://learn.microsoft.com/en-us/cpp/cpp/move-constructors-and-move-assignment-
 
 https://web.stanford.edu/class/cs106l/lectures/lecture13_move_semantics_s23.pdf
 
+The entire Pro Git book, written by Scott Chacon https://git-scm.com/book/en/v2
 
 
 SDL2 is a more low-level, flexible, and widely-used library, offering a lot of control and broad platform support, making it a strong choice for those who need that level of control and portability.
