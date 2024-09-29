@@ -79,6 +79,8 @@ https://git-scm.com/book/en/v2
 Essential Mathematics for Games and Interactive Applications BY James M. Van Verth (Author), Lars M. Bishop (Author)
 https://www.r-5.org/files/books/computers/algo-list/game-development/James_Van_Verth_Lars_Bishop-Essential_Mathematics-EN.pdf
 
+Game Programming Patterns by Robert Nystrom
+https://gameprogrammingpatterns.com/contents.html
 
 
 SDL2 is a more low-level, flexible, and widely-used library, offering a lot of control and broad platform support, making it a strong choice for those who need that level of control and portability.
