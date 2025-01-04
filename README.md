@@ -98,3 +98,7 @@ Vulkan is a more modern, low-level API that offers higher performance and more c
 DirectX 11 is more user-friendly and easier to work with, making it suitable for a broad range of applications, especially those that don't require the absolute best performance. It’s a solid choice for developers who want to maintain compatibility with older hardware and software and who prefer a simpler API.
 
 DirectX 12 offers greater control and potential for performance improvements, especially in multi-threaded and CPU-bound scenarios. However, it comes with increased complexity and a steeper learning curve. DirectX 12 is the better choice for developers who need to optimize for cutting-edge hardware and who are prepared to manage the additional responsibilities that come with a low-level API.
+
+Mathematics:
+Interpolation - https://en.wikipedia.org/wiki/Interpolation
+Barycentric coordinate system - https://en.wikipedia.org/wiki/Barycentric_coordinate_system
