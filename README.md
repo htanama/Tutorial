@@ -100,5 +100,7 @@ DirectX 11 is more user-friendly and easier to work with, making it suitable for
 DirectX 12 offers greater control and potential for performance improvements, especially in multi-threaded and CPU-bound scenarios. However, it comes with increased complexity and a steeper learning curve. DirectX 12 is the better choice for developers who need to optimize for cutting-edge hardware and who are prepared to manage the additional responsibilities that come with a low-level API.
 
 Mathematics:
+
 Interpolation - https://en.wikipedia.org/wiki/Interpolation
+
 Barycentric coordinate system - https://en.wikipedia.org/wiki/Barycentric_coordinate_system
