@@ -1,0 +1,20 @@
+How To Compile Your Source Code Using Microsoft Visual Studio Compiler Command-Line syntax
+
+https://learn.microsoft.com/en-us/cpp/build/reference/compiler-command-line-syntax?view=msvc-170
+
+Locate where the cl.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx86\x86
+
+example build script in windows using MSVC cl.exe
+
+cl -Zi /Fe: LoadFromFile32.exe LoadFromFile.cpp /I"C:\dev\SDL2\include" /link /LIBPATH:C:\dev\SDL2\lib\x86 /SUBSYSTEM:WINDOWS shell32.lib SDL2.lib SDL2main.lib SDL2_image.lib
+
+
+Creating a batch file or (Build.bat)
+When working with cl.exe, you can use the ^ (caret) character as a line continuation symbol in Windows batch files or the command prompt. 
+This allows you to split long command lines into multiple lines for better readability. Save the build script below in the batch file (example Build.bat)
+
+cl /JMC /permissive- /ifcOutput "x64\Debug\" /GS /W3 /Zc:wchar_t /I"C:\Users\harry\Development\SDL-GameC_C++\3drenderer-Win\3drenderer\SDL2\SDL2" ^
+/ZI /Gm- /Od /sdl /Fd"x64\Debug\vc143.pdb" /Zc:inline /fp:precise /D "_DEBUG" /D "_CONSOLE" /D "_UNICODE" /D "UNICODE" /errorReport:prompt ^
+/WX- /Zc:forScope /RTC1 /Gd /MDd /FC /Fa"x64\Debug\" /EHsc /nologo /Fo"x64\Debug\" /Fp"x64\Debug\3drenderer.pch" /diagnostics:column 
