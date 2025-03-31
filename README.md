@@ -104,3 +104,6 @@ Mathematics:
 Interpolation - https://en.wikipedia.org/wiki/Interpolation
 
 Barycentric coordinate system - https://en.wikipedia.org/wiki/Barycentric_coordinate_system
+
+Font Assets
+https://www.1001fonts.com/pixel-fonts.html
