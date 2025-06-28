@@ -2,6 +2,9 @@ The Best Programmers are more curious about bugs/errors than irritated.
 
 References: 
 
+Code Complete by Steve McConnell (Chapters on fundamental data types and expressions
+https://khmerbamboo.wordpress.com/wp-content/uploads/2014/09/code-complete-2nd-edition-v413hav.pdf
+
 Lazy Foo' Productions website: https://lazyfoo.net/tutorials/SDL/index.php#Hello%20SDL
 
 Warzone 2100 website: https://wz2100.net/ source code: https://github.com/Warzone2100/warzone2100/tree/master
