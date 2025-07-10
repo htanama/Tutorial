@@ -119,3 +119,9 @@ Source credit from Brown Univerity Computer Science
 https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
 /////
 https://github.com/htanama/Tutorial/blob/main/assembly-x64_cheatsheet.pdf
+
+Assembly Language reference
+https://cs61.seas.harvard.edu/site/2019/Asm/
+
+Assembly Language Ref from Stanford University
+https://web.stanford.edu/class/archive/cs/cs107/cs107.1196/lab7/
