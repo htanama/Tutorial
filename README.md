@@ -125,3 +125,6 @@ https://cs61.seas.harvard.edu/site/2019/Asm/
 
 Assembly Language Ref from Stanford University
 https://web.stanford.edu/class/archive/cs/cs107/cs107.1196/lab7/
+
+Examining memory
+https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_55.html
